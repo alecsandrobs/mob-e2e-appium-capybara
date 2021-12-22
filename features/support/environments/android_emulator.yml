@@ -1,0 +1,6 @@
+:appium_lib:
+  :server_url:         'http://localhost:4723/wd/hub'
+:caps:
+  :platformName:       'Android'
+  :app:                ./features/support/apk/CTAppium_1_2.apk
+  :newCommandTimeout:  30

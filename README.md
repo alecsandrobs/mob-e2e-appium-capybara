@@ -15,3 +15,12 @@ Open report
 ```
 allure serve report/
 ```
+
+Running with rake, just rake comand + `task name` eg:
+```
+rake test_report
+```
+or
+```
+TAGS=@Form rake tags
+```

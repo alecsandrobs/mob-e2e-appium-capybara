@@ -1,0 +1,12 @@
+default: -p pretty -p allure -p not_wip
+
+progress: --format progress
+pretty: --format pretty
+message: -f message -o report/cucumber_json/cucumber-messages.ndjson
+json: -f json -o report/cucumber_json/cucumber<%= ENV['TEST_ENV_NUMBER'] %>.json
+html: --format html --out=report/report<%= ENV['TEST_ENV_NUMBER'] %>.html
+allure: --format AllureCucumber::CucumberFormatter --out=report/
+features: --require features './features/specs'
+wip: --tags @wip
+not_wip: --tags 'not @wip'
+test: --tags @test
