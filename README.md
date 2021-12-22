@@ -16,7 +16,7 @@ Open report
 allure serve report/
 ```
 
-Running with rake, just `rake` comand + `task name` eg:
+Running with rake, just `rake` command + `task name` eg:
 ```
 rake test_report
 ```
